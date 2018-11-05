@@ -162,14 +162,22 @@ https://github.com/seratch/jslack
 https://dzone.com/articles/make-slack-bots-in-java-in-minutes
 
 
-Event based
-=============
+Authenticate via OAuth Tokens
+==============================
+https://api.slack.com/docs/oauth
+
+
+Event based   (Posting events via incoming web hooks)
+======================================================
 Step 1.  Event triggers - alert 
             Margin Call.
             Failed job trigger.
             Approval request.
             Flight confirmation / Hotel reservation.
       Based event type publish to relevant slack channel.
+      Posted via incoming webhooks.
+      Incoming webhooks are a simple way to post messages from external sources into Slack. They make use of normal HTTP requests with a JSON payload, which    includes the message and a few other optional details. You can include message attachments to display richly-formatted messages.
+      
 Step 2.  User /Stack holders respond to event. 
             Approve/Reject request.
             User Confirm Flight/Reservation.
@@ -177,15 +185,17 @@ Step 2.  User /Stack holders respond to event.
             Discuss with stake holders for next course of action.
             
             
-Enquiry based
-=============
+Enquiry based  (Interactivity component).
+==========================================
 Step 1.  User to initiate via simple natural language 
             Check my balance
-Step 2.  Bot responses 
+Step 2.  Bot responds with dialog that includes call back id 
             Low balance $3.23, do you wish to top up?  Yes or No
 Step 3.  User responds to event. 
-            Yes
-Step 4.  Bot responds 
+            Yes or No
+Step 4.  Bot actions using callback_id
+           POST request linked to call back.  
+Step 5.  Responds via channel 
             Top up complete new balance $103.23
             
             
