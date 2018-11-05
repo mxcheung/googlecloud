@@ -154,3 +154,9 @@ Please follow these instructions to work around this issue:
 </system-properties>
 ```
 
+https://github.com/GoogleCloudPlatform/slack-samples/tree/master/java/command
+https://www.webpagefx.com/tools/emoji-cheat-sheet/
+
+https://github.com/seratch/jslack
+
+https://dzone.com/articles/make-slack-bots-in-java-in-minutes

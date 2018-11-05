@@ -1,0 +1,30 @@
+{
+  "type": "interactive_message",
+  "actions": [
+    {
+      "name": "game",
+      "type": "button",
+      "value": "approve"
+    }
+  ],
+  "callback_id": "checkers",
+  "team": {
+    "id": "TDPDEFKJM",
+    "domain": "interceptor-chatbot"
+  },
+  "channel": {
+    "id": "DDR484ZDM",
+    "name": "directmessage"
+  },
+  "user": {
+    "id": "UDR3D3U3H",
+    "name": "maxbot"
+  },
+  "action_ts": "1541408923.983337",
+  "message_ts": "1541408921.000300",
+  "attachment_id": "1",
+  "token": "AQZiorCLLAaqTPbpFiA4IeV6",
+  "is_app_unfurl": false,
+  "response_url": "https://hooks.slack.com/actions/TDPDEFKJM/473135124390/fQLvNYhHaw9KJ5uVQIRxSRn7",
+  "trigger_id": "471563947716.465456529633.89f3a001767f5b117db2df02b7cb39bf"
+}
